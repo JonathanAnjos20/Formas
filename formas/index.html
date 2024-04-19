@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aventura Geométrica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Aventura Geométrica</h1>
+  </header>
+  <main>
+    <section class="shape">
+      <img src="ASSETS/CSS/circulo.avif" alt="Círculo" class="shape-image">
+      <h2>Círculo</h2>
+      <label for="radius">Raio:</label>
+      <input type="number" id="radius">
+      <button onclick="calculateCircleArea()">Calcular Área</button>
+      <p id="circleResult"></p>
+    </section>
+    <section class="shape">
+      <img src="ASSETS/CSS/quadrado.avif" alt="Quadrado" class="shape-image">
+      <h2>Quadrado</h2>
+      <label for="sideSquare">Lado:</label>
+      <input type="number" id="sideSquare">
+      <button onclick="calculateSquareArea()">Calcular Área</button>
+      <p id="squareResult"></p>
+    </section>
+    <section class="shape">
+      <img src="ASSETS/CSS/triangulo.webp" alt="Triângulo" class="shape-image">
+      <h2>Triângulo</h2>
+      <label for="sideTriangle">Lado:</label>
+      <input type="number" id="sideTriangle">
+      <button onclick="calculateTriangleArea()">Calcular Área</button>
+      <p id="triangleResult"></p>
+    </section>
+    <section class="shape">
+      <img src="ASSETS/CSS/cuboide-removebg-preview.png" alt="Cubóide" class="shape-image">
+      <h2>Cubóide</h2>
+      <label for="length">Comprimento:</label>
+      <input type="number" id="length">
+      <label for="width">Largura:</label>
+      <input type="number" id="width">
+      <label for="height">Altura:</label>
+      <input type="number" id="height">
+      <button onclick="calculateCuboidArea()">Calcular Área</button>
+      <p id="cuboidResult"></p>
+    </section>
+    <section class="shape">
+      <img src="ASSETS/CSS/images-removebg-preview.png" alt="Romboedro" class="shape-image">
+      <h2>Romboedro</h2>
+      <label for="diagonal1">Diagonal Maior:</label>
+      <input type="number" id="diagonal1">
+      <label for="diagonal2">Diagonal Menor:</label>
+      <input type="number" id="diagonal2">
+      <button onclick="calculateRhomboidArea()">Calcular Área</button>
+      <p id="rhomboidResult"></p>
+    </section>
+    <section class="shape">
+      <img src="ASSETS/CSS/trapezio.jpg" alt="Trapézio Irregular" class="shape-image">
+      <h2>Trapézio Irregular</h2>
+      <label for="base1">Base Maior:</label>
+      <input type="number" id="base1">
+      <label for="base2">Base Menor:</label>
+      <input type="number" id="base2">
+      <label for="heightTrapezoid">Altura:</label>
+      <input type="number" id="heightTrapezoid">
+      <button onclick="calculateIrregularTrapezoidArea()">Calcular Área</button>
+      <p id="irregularTrapezoidResult"></p>
+    </section>
+    <section class="shape">
+      <img src="ASSETS/CSS/poligono regular.png" alt="Polígono Regular" class="shape-image">
+      <h2>Polígono Regular</h2>
+      <label for="radiusPolygon">Raio da Circunferência:</label>
+      <input type="number" id="radiusPolygon">
+      <label for="sides">Número de Lados:</label>
+      <input type="number" id="sides">
+      <button onclick="calculateRegularPolygonArea()">Calcular Área</button>
+      <p id="regularPolygonResult"></p>
+    </section>
+    <section class="shape">
+      <img src="ASSETS/CSS/cubo.png" alt="Cubo" class="shape-image">
+      <h2>Cubo</h2>
+      <label for="sideCube">Lado:</label>
+      <input type="number" id="sideCube">
+      <button onclick="calculateCubeArea()">Calcular Área</button>
+      <p id="cubeResult"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
